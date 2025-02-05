@@ -10,7 +10,7 @@
                 "-I${workspaceFolder}/libs/include",
                 "-L${workspaceFolder}/libs/lib",
                 "-o",
-                "brickbreaker.exe",
+                "BrickBreaker.exe",
                 "src/*.cpp",
                 "-lmingw32",
                 "-lSDL2main",

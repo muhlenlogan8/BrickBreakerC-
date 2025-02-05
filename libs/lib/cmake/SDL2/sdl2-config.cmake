@@ -17,9 +17,9 @@ endmacro()
 get_filename_component(CMAKE_CURRENT_LIST_DIR ${CMAKE_CURRENT_LIST_DIR} REALPATH)
 get_filename_component(prefix "${CMAKE_CURRENT_LIST_DIR}/../../.." ABSOLUTE)
 
-set(exec_prefix "${prefix}")
-set(bindir "${exec_prefix}/bin")
-set(libdir "${exec_prefix}/lib")
+set(exec_prefix "${prefix}/bin")
+set(bindir "${prefix}/bin")
+set(libdir "${prefix}/lib")
 set(includedir "${prefix}/include")
 
 set_and_check(SDL2_PREFIX         "${prefix}")
